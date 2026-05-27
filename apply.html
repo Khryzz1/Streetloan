@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apply for a Street Loan in Ghana — vehicle, property, or valuables as collateral.">
+  <title>Apply for a Loan | Street Loan Ghana</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/icons.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Street Loan Home">
+        <span class="logo-street">STREET</span>
+        <span class="logo-loan">LOAN</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span class="icon icon-menu" aria-hidden="true"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg></span>
+        <span class="icon icon-close" aria-hidden="true"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></span>
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="collateral.html">Collateral</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="apply.html">Apply Now</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Apply</p>
+      <h1>Apply for a <span class="accent">Street Loan</span></h1>
+      <p>Complete the form below. Our Ghana team will contact you within 24–48 hours.</p>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="split-section" style="margin-bottom: 2.5rem;">
+          <div>
+            <img src="images/loanaprroved.JPEG" alt="Happy Ghanaian customer after receiving loan approval">
+          </div>
+          <div class="split-content">
+            <h2>Quick &amp; <span class="accent">Secure</span> Application</h2>
+            <p>Whether you're pledging your car in Accra or property in Kumasi, this form starts your journey. All amounts in Ghana Cedis (GHS).</p>
+            <p class="form-hint">* Required fields. Your data is protected under Ghana Data Protection Act principles.</p>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div id="formMessage" class="form-message" role="alert"></div>
+
+          <form id="loanApplicationForm" novalidate>
+            <h3 style="color: var(--orange); margin-bottom: 1rem;">Personal Information</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" required placeholder=>
+              </div>
+              <div class="form-group">
+                <label for="ghanaCard">Ghana Card Number *</label>
+                <input type="text" id="ghanaCard" name="ghanaCard" required placeholder="GHA-XXXXXXXXX-X">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required placeholder=>
+                <span class="form-hint">Ghana mobile: 024, 055, 020, etc.</span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@email.com">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="region">Region *</label>
+                <select id="region" name="region" required>
+                  <option value="">Select region</option>
+                  <option value="greater-accra">Greater Accra</option>
+                  <option value="ashanti">Ashanti</option>
+                  <option value="western">Western</option>
+                  <option value="central">Central</option>
+                  <option value="eastern">Eastern</option>
+                  <option value="northern">Northern</option>
+                  <option value="volta">Volta</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="city">City / Town *</label>
+                <input type="text" id="city" name="city" required placeholder="e.g. Accra, Kumasi, Tamale">
+              </div>
+            </div>
+
+            <h3 style="color: var(--orange); margin: 2rem 0 1rem;">Loan Details</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="collateralType">Collateral Type *</label>
+                <select id="collateralType" name="collateralType" required>
+                  <option value="vehicle">Vehicle (Car, SUV, etc.)</option>
+                  <option value="property">Property (House, Land)</option>
+                  <option value="valuables">Other Valuables</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="loanAmount">Loan Amount (GHS) *</label>
+                <input type="number" id="loanAmount" name="loanAmount" required min="1000" max="5000000" step="500" value="25000" placeholder="25000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="loanTerm">Repayment Term *</label>
+              <select id="loanTerm" name="loanTerm" required>
+                <option value="1">1 month</option>
+                <option value="6">6 months</option>
+                <option value="12" selected>12 months</option>
+                <option value="24">24 months</option>
+                <option value="36">36 months</option>
+                <option value="48">48 months</option>
+                <option value="60">60 months</option>
+              </select>
+            </div>
+            <div id="loanEstimate" class="form-group" style="padding: 1rem; border-radius: var(--radius);"></div>
+
+            <h3 style="color: var(--orange); margin: 2rem 0 1rem;">Collateral Information</h3>
+
+            <div data-collateral-field="vehicle">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="vehicleMake">Vehicle Make *</label>
+                  <input type="text" id="vehicleMake" name="vehicleMake" placeholder="e.g. Toyota, Honda">
+                </div>
+                <div class="form-group">
+                  <label for="vehicleModel">Model &amp; Year *</label>
+                  <input type="text" id="vehicleModel" name="vehicleModel" placeholder="e.g. Corolla 2018">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="vehicleReg">Registration Number *</label>
+                  <input type="text" id="vehicleReg" name="vehicleReg" placeholder="e.g. GR 1234-20">
+                </div>
+                <div class="form-group">
+                  <label for="vehicleMileage">Approx. Mileage (km)</label>
+                  <input type="number" id="vehicleMileage" name="vehicleMileage" placeholder="85000">
+                </div>
+              </div>
+            </div>
+
+            <div data-collateral-field="property" style="display: none;">
+              <div class="form-group">
+                <label for="propertyType">Property Type</label>
+                <select id="propertyType" name="propertyType">
+                  <option value="residential">Residential</option>
+                  <option value="commercial">Commercial</option>
+                  <option value="land">Land</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="propertyLocation">Property Location</label>
+                <input type="text" id="propertyLocation" name="propertyLocation" placeholder="Full address or area name">
+              </div>
+            </div>
+
+            <div data-collateral-field="valuables" style="display: none;">
+              <div class="form-group">
+                <label for="valuableDescription">Description of Valuables</label>
+                <textarea id="valuableDescription" name="valuableDescription" rows="3" placeholder="e.g. Gold jewellery, laptops, shop inventory"></textarea>
+              </div>
+            </div>
+
+            <div class="form-group" data-collateral-field="all">
+              <label for="loanPurpose">Purpose of Loan *</label>
+              <select id="loanPurpose" name="loanPurpose" required>
+                <option value="">Select purpose</option>
+                <option value="business">Business / Trade</option>
+                <option value="education">Education</option>
+                <option value="medical">Medical / Emergency</option>
+                <option value="vehicle-repair">Vehicle Repair</option>
+                <option value="property">Property / Construction</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="additionalInfo">Additional Information</label>
+              <textarea id="additionalInfo" name="additionalInfo" rows="3" placeholder="Tell us anything else we should know"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label style="display: flex; align-items: flex-start; gap: 0.5rem; font-weight: 400; cursor: pointer;">
+                <input type="checkbox" id="terms" name="terms" required style="width: auto; margin-top: 0.25rem;">
+                <span>I agree to Street Loan's terms and consent to collateral valuation. I understand this is an application, not a guarantee of approval. *</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width: 100%; padding: 1rem;">Submit Application</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-street">STREET</span>
+          <span class="logo-loan">LOAN</span>
+        </a>
+        <p>Secure collateral lending for Ghanaians. Your assets, your opportunity.</p>
+        <span class="ghana-flag" aria-label="Ghana" role="img">
+          <svg viewBox="0 0 36 24" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="8" fill="#CE1126"/><rect y="8" width="36" height="8" fill="#FCD116"/><rect y="16" width="36" height="8" fill="#006B3F"/><polygon fill="#000" points="18,10 19.2,13.6 23,13.6 20,15.8 21.2,19.5 18,17.2 14.8,19.5 16,15.8 13,13.6 16.8,13.6"/></svg>
+        </span>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="apply.html">Apply Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="collateral.html#vehicles">Vehicle Loans</a></li>
+          <li><a href="collateral.html#property">Property Loans</a></li>
+          <li><a href="collateral.html#valuables">Valuables</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:0240788185">0240788185</a></li>
+          <li><a href="mailto:nkrumah623@gmail.com">nkrumah623@gmail.com</a></li>
+          <li>Gh autoguy Ashalley Botwe Obimin Junction</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Street Loan Ghana. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

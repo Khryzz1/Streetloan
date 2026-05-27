@@ -1,0 +1,141 @@
+/* Street Loan — inline SVG icon components */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+.icon svg {
+  width: 1.15em;
+  height: 1.15em;
+  fill: currentColor;
+  display: block;
+}
+
+.icon--lg svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon--xl svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.icon--orange {
+  color: var(--orange);
+}
+
+.icon--white {
+  color: var(--white);
+}
+
+.icon--on-orange {
+  color: var(--text-on-orange);
+}
+
+/* Nav toggle */
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: transparent;
+  border: 2px solid var(--orange);
+  border-radius: var(--radius);
+  cursor: pointer;
+  color: var(--orange);
+}
+
+.nav-toggle .icon-close {
+  display: none;
+}
+
+.nav-toggle.is-open .icon-menu {
+  display: none;
+}
+
+.nav-toggle.is-open .icon-close {
+  display: inline-flex;
+}
+
+.nav-toggle .icon svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+/* Card icon boxes */
+.card-icon.icon {
+  width: 56px;
+  height: 56px;
+  background: var(--orange);
+  color: var(--text-on-orange);
+  border-radius: var(--radius);
+}
+
+.card-icon.icon svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.contact-item .icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--text-on-orange);
+}
+
+/* Ghana flag badge */
+.ghana-flag {
+  display: inline-flex;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 32px;
+  height: 22px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.ghana-flag svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero-badge .ghana-flag {
+  width: 22px;
+  height: 15px;
+  vertical-align: -2px;
+}
+
+.map-placeholder .icon {
+  margin-right: 0;
+  color: var(--text-on-orange);
+  opacity: 0.85;
+}
+
+/* List checkmarks (collateral pages) */
+.list-check {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.list-check li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.35rem 0;
+  color: var(--text-muted);
+}
+
+.list-check .icon {
+  color: var(--orange);
+  margin-top: 0.15rem;
+}
+
+.list-check .icon svg {
+  width: 1rem;
+  height: 1rem;
+}
